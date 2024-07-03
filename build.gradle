@@ -91,3 +91,8 @@ tasks.withType(JavaCompile).configureEach {
 clean {
     delete file(querydslDir)
 }
+// build.gradle
+
+jar {
+    enabled = false
+}

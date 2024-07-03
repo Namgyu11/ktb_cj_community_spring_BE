@@ -51,9 +51,11 @@ public class Post extends BaseEntity {
       @Column(nullable = false)
       private int likeCount;
 
+      @Builder.Default
       @OneToMany(mappedBy = "post", cascade = CascadeType.ALL)
       private List<Comment> comments = new ArrayList<>();
 
+      @Builder.Default
       @OneToMany(mappedBy = "post", cascade = CascadeType.ALL)
       private List<PostLike> postLikes = new ArrayList<>();
 
