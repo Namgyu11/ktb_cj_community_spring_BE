@@ -38,8 +38,8 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
       private String tokenHeader;
 
       /**
-       * HTTP 요청을 필터링 하여 JWT 토큰을 검증하고, 유효한 토큰일 경우 인증 정보를 SecurityContext 에 저장. 만약 토큰이 유효하지 않거나 로그아웃
-       * 된 상태라면 예외 처리
+       * HTTP 요청을 필터링 하여 JWT 토큰을 검증하고, 유효한 토큰일 경우 인증 정보를 SecurityContext 에 저장.
+       * 만약 토큰이 유효하지 않거나 로그아웃된 상태라면 예외 처리
        *
        * @param request     HTTP 요청
        * @param response    HTTP 응답
